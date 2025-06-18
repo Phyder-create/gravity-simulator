@@ -316,7 +316,6 @@ export default function GravitySimulator() {
             console.log(`Trails ${showTrails ? 'enabled' : 'disabled'}`);
             break;
           case ' ':
-            // Spacebar - pause/unpause (toggle noLoop/loop)
             if (p.isLooping()) {
               p.noLoop();
               console.log('Simulation paused');
@@ -354,7 +353,7 @@ export default function GravitySimulator() {
           position : absolute;
         }
         
-        /* Enhanced slider styling for better visibility */
+        /*slider styling for better visibility */
         input[type="range"] {
           -webkit-appearance: none;
           background: rgba(255,255,255,0.4) !important;
@@ -385,7 +384,6 @@ export default function GravitySimulator() {
           box-shadow: 0 2px 6px rgba(0,0,0,0.3) !important;
         }
         
-        /* Button hover effects */
         button:hover {
           background-color: #ff6666 !important;
           transform: translateY(-1px);
